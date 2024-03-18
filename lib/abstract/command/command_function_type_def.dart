@@ -1,0 +1,1 @@
+typedef Command<T> = Function(T arg);

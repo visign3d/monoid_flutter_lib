@@ -1,0 +1,1 @@
+///generate abstract class overrides like stl.. stless flutter

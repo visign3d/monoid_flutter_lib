@@ -1,0 +1,15 @@
+key names : snakeCase  --example: class_model
+class names : pascalCase --example: ClassName
+
+
+
+camelCase : helloWorld
+mustacheCase : {{ Hello World }}
+
+
+
+
+
+
+script
+```script text```

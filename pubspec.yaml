@@ -8,8 +8,35 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  dart_mappable: ^4.2.1
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
+  get: ^4.6.6
+  cupertino_icons: ^1.0.2
+
+  file_picker: ^6.1.1
+  cached_network_image: ^3.3.1
+  firebase_storage: ^11.6.5
+  firebase_storage_web: ^3.6.22
+
+  google_sign_in: ^6.2.1
+  file_saver: ^0.2.10
+  flutter_parse: ^1.0.1
+  parse_server_sdk: ^6.3.0
+  flutter_chat_ui: ^1.6.12
+  localization: ^2.1.1
+  flutter_localization: ^0.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  video_player: ^2.8.2
+  video_player_web_hls: ^1.0.0+3
+  fast_cached_network_image: ^1.2.0
+  universal_html: ^2.2.4
+  flutter_layout_grid: ^2.0.5
+  dyn_mouse_scroll: ^1.0.7
+  event_bus: ^2.0.0
+
 
 dev_dependencies:
   flutter_test:
