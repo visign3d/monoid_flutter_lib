@@ -28,4 +28,5 @@ migrate_working_dir/
 .dart_tool/
 build/
 /keys/
-/lib/monoid_parse_key.dart
+
+/lib/keys/

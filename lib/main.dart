@@ -26,7 +26,7 @@ import 'package:monoid_flutter_lib/features/text/repository/parse_text_repositor
 import 'package:monoid_flutter_lib/features/text/service/text_service.dart';
 import 'package:monoid_flutter_lib/features/theme/app_theme.dart';
 import 'package:monoid_flutter_lib/features/xls/xls_service.dart';
-import 'package:monoid_flutter_lib/monoid_parse_key.dart';
+import 'package:monoid_flutter_lib/keys/monoid_parse_key.dart';
 import 'features/parse_server/parse_user.dart' as user;
 import 'features/parse_server/command/register_user_command.dart';
 import 'package:flutter_parse/flutter_parse.dart' as fp;
