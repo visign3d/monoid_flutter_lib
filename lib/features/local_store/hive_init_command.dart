@@ -9,7 +9,7 @@ import '../../abstract/command/a_command.dart';
 
 class HiveInitCommand extends ACommand {
   @override
-  Future execute() async {
+  Future call() async {
     await Hive.initFlutter();
   }
 }

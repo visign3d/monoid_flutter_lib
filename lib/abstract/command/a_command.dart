@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import '../model/a_object.dart';
 import '../service/a_service.dart';
 
-
 /// Command represents a single function with parameters.
 ///
 /// Parameters are described in Command class fields
@@ -19,23 +18,23 @@ import '../service/a_service.dart';
 /// -- [execute]<[T]>([ACommand]<[T]>()) ,
 ///
 /// to add command to [CommandService] cache and run
-abstract class ACommand<T> extends AObject{
-  const ACommand({super.id=''});
-  T execute();
+abstract class ACommand<T> extends AObject {
+  const ACommand({super.id = ''});
+
+  T call();
+
+  ///async call
+  ///Command().call()
+  ///Future<T> call() async => execute();
 }
-
-
 
 ///command execution + Command registration in command service
-execute<T>(ACommand<T> command){
+execute<T>(ACommand<T> command) {
   CommandService.createCommand(command);
-  return command.execute();
+  return command.call();
 }
 
-
-
-class CommandService extends AService{
-
+class CommandService extends AService {
   static final CommandService _instance = CommandService._internal();
 
   factory CommandService() {
@@ -43,16 +42,14 @@ class CommandService extends AService{
   }
 
   CommandService._internal() {
-   if (kDebugMode) {
-     print('command service started');
-   }
+    if (kDebugMode) {
+      print('command service started');
+    }
   }
 
-  static final List<ACommand> _commands =[];
+  static final List<ACommand> _commands = [];
 
-
-
-  static createCommand(ACommand command){
+  static createCommand(ACommand command) {
     _commands.add(command);
   }
 
@@ -61,4 +58,3 @@ class CommandService extends AService{
     throw UnimplementedError();
   }
 }
-

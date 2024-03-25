@@ -1,0 +1,1 @@
+library monoid_widgets;

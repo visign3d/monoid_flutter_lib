@@ -17,7 +17,7 @@ class ChangeCurrentPositionCommand extends ACommand {
   final GridRxView gridRxView;
 
   @override
-  execute() {
+  call() {
     gridRxView.currentPosition.value=newPosition;
   }
 }

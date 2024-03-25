@@ -13,7 +13,7 @@ class GoToCategoryPageCommand extends ACommand {
   final CategoryModel model;
 
   @override
-  execute() {
+  call() {
     Get.toNamed(RouteNames.categoryPage,arguments: [model.id]);
   }
 }

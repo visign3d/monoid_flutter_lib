@@ -8,7 +8,7 @@ import '../../../abstract/command/a_command.dart';
 
 class GetToAdmin extends ACommand {
   @override
-  execute() {
+  call() {
     Get.toNamed(RouteNames.frontEnd);
   }
 }

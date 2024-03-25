@@ -17,7 +17,7 @@ class UpdateParseFieldCommand extends ACommand {
   final String value;
 
   @override
-  execute() async {
+  call() async {
     ParseObject object = ParseObject(className)
       ..objectId = id
       ..set(key, value);

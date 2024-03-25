@@ -36,6 +36,10 @@ dependencies:
   flutter_layout_grid: ^2.0.5
   dyn_mouse_scroll: ^1.0.7
   event_bus: ^2.0.0
+  ionicons: ^0.2.2
+  dio: ^5.4.1
+  http: ^0.13.6
+  dartz: ^0.10.1
 
 
 dev_dependencies:

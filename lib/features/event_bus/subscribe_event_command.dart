@@ -13,7 +13,7 @@ class SubscribeEventCommand<T> extends ACommand{
   EventService eventBusService =Get.find();
 
   @override
-  execute() {
+  call() {
     eventBusService.eventBus.on<T>().listen(listener);
   }
 

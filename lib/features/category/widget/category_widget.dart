@@ -27,7 +27,7 @@ class CategoryWidget extends StatelessWidget {
           color: Colors.grey.shade50,
           padding: EdgeInsets.zero,
           onPressed: () {
-            GoToCategoryPageCommand(CategoryModel()).execute();
+            GoToCategoryPageCommand(CategoryModel()).call();
           },
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

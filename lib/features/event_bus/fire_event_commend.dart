@@ -12,7 +12,7 @@ class FireEventCommand extends ACommand{
 
   EventService eventBusService =Get.find();
   @override
-  execute() {
+  call() {
     eventBusService.eventBus.fire(event);
   }
 

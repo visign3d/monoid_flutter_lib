@@ -13,7 +13,7 @@ class GetParseFieldCommand extends ACommand {
   final String key;
 
   @override
-  Future<List<ParseObject>> execute() async{
+  Future<List<ParseObject>> call() async{
     QueryBuilder<ParseObject> queryTodo =
     QueryBuilder<ParseObject>(ParseObject('Todo'));
     final ParseResponse apiResponse = await queryTodo.query();

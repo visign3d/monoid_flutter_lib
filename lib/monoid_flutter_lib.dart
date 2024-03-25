@@ -1,7 +1,7 @@
 library monoid_flutter_lib;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'abstract/abstract_lib.dart';
+export 'features/features_lib.dart';
+export 'widgets/monoid_widgets.dart';
+
+

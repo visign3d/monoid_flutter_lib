@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -29,7 +27,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () => Scaffold(
-
         backgroundColor: Colors.white,
         appBar: showIsVisible.value == true
             ? null
@@ -51,13 +48,11 @@ class HomePage extends StatelessWidget {
                 leading: MaterialButton(
                     onPressed: null,
                     child: Image.network("https://i.ibb.co/MgFK8VM/logo.png"))),
-        body:
-          const SingleChildScrollView(
-            child: CategoryWidget(
-              name: 'pin board',
-            ),
+        body: const SingleChildScrollView(
+          child: CategoryWidget(
+            name: 'pin board',
           ),
-
+        ),
         floatingActionButton: showIsVisible.value == true
             ? null
             : FloatingActionButton(
@@ -115,7 +110,7 @@ class HomePage extends StatelessWidget {
 
   onChatEnter(String text) {
     if (text == 'go to admin') {
-      GetToAdmin().execute();
+      GetToAdmin().call();
     }
   }
 }

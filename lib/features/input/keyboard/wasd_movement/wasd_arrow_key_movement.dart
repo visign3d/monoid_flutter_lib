@@ -11,7 +11,7 @@ class WASDArrowKeyCommand extends ACommand{
   KeyEventModel eventModel;
 
   @override
-  execute() {
+  call() {
     // TODO: implement execute
     throw UnimplementedError();
   }
